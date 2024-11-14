@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-11-14T16:29:29.831Z",
+    "end": "2024-11-14T16:29:37.916Z",
+    "duration": 8085,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "02efec82-e2dc-473a-9fa9-17bf0b942e19",
+      "title": "",
+      "fullFile": "cypress\\e2e\\functional_test.cy.js",
+      "file": "cypress\\e2e\\functional_test.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "3217f7ce-4192-45e1-9284-a1e622d6eed2",
+          "title": "E-commerce Functional Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Search, add to cart, and checkout",
+              "fullTitle": "E-commerce Functional Test Search, add to cart, and checkout",
+              "timedOut": null,
+              "duration": 4440,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.desktop-icon-menu > :nth-child(5) > .nav-link > .imh-ds-icon > .fa').should('be.visible') // Ensure the element is visible before clicking\n.click({\n  force: true\n});",
+              "err": {},
+              "uuid": "bc582d66-2404-44dc-b217-72a17626dd9d",
+              "parentUUID": "3217f7ce-4192-45e1-9284-a1e622d6eed2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "bc582d66-2404-44dc-b217-72a17626dd9d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4440,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "[status]_[datetime]-report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "reportFilename": "[status]_[datetime]-report",
+        "quiet": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

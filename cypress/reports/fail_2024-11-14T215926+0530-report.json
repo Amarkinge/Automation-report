@@ -1,0 +1,111 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-11-14T16:29:10.131Z",
+    "end": "2024-11-14T16:29:26.486Z",
+    "duration": 16355,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a0d35e37-1c80-40f2-8559-ab15a0284387",
+      "title": "",
+      "fullFile": "cypress\\e2e\\form_validation_test.cy.js",
+      "file": "cypress\\e2e\\form_validation_test.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1f749e63-f996-4274-9e52-531de6c9e847",
+          "title": "Form Validation Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Check form validation",
+              "fullTitle": "Form Validation Test Check form validation",
+              "timedOut": null,
+              "duration": 10666,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#supportDropDown > .subnav-title').click();\ncy.window().should('have.property', 'jQuery');\ncy.wait(15000);",
+              "err": {
+                "message": "ReferenceError: The following error originated from your application code, not from Cypress.\n\n  > jQuery is not defined\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "ReferenceError: The following error originated from your application code, not from Cypress.\n\n  > jQuery is not defined\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at <unknown> (https://www.inmotionhosting.com/support/:1721:221)",
+                "diff": null
+              },
+              "uuid": "e097a442-ff1d-413d-a876-7b9eaaf04a92",
+              "parentUUID": "1f749e63-f996-4274-9e52-531de6c9e847",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "e097a442-ff1d-413d-a876-7b9eaaf04a92"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 10666,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "[status]_[datetime]-report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "reportFilename": "[status]_[datetime]-report",
+        "quiet": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

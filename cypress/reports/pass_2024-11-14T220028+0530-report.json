@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-11-14T16:30:17.606Z",
+    "end": "2024-11-14T16:30:28.438Z",
+    "duration": 10832,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c879e205-ce65-46c2-ad81-22cf7a6dcaed",
+      "title": "",
+      "fullFile": "cypress\\e2e\\ui_test.cy.js",
+      "file": "cypress\\e2e\\ui_test.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7515c84f-8f53-4182-9d67-04423f3c9e0a",
+          "title": "UI Elements Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify presence of key UI elements",
+              "fullTitle": "UI Elements Test Verify presence of key UI elements",
+              "timedOut": null,
+              "duration": 7313,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.desktop-icon-menu > .imh-language-switcher > .country-selector > .wgcurrent > .wglanguage-name').should('be.visible');\ncy.get('.desktop-icon-menu > .imh-comment > .chat-btn-header > .imh-ds-icon').should('be.visible');\ncy.get('.desktop-icon-menu > .imh-comment > .chat-btn-header > .imh-ds-icon').should('be.visible');\ncy.get(':nth-child(5) > .nav-link > .imh-ds-icon > .cartitems').should('be.visible');\ncy.get('#supportDropDown > .subnav-title').should('be.visible');\ncy.get('#supportDropDown > .subnav-title').should('be.visible');\ncy.get(':nth-child(4) > .col-xs-12 > div > p > .ppb-button').should('be.visible');\ncy.get('[style=\"padding-top: 20px;\"] > .col-xs-12 > p > .ppb-button').should('be.visible');\ncy.get('.col-lg-3 > .button > .ppb-button').should('be.visible');\ncy.get('#domain_search_domain').should('be.visible');\ncy.get('.imh-footer-bottom > .container').should('be.visible');",
+              "err": {},
+              "uuid": "dc0a2959-6263-4306-87cd-3a3cb3385558",
+              "parentUUID": "7515c84f-8f53-4182-9d67-04423f3c9e0a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "dc0a2959-6263-4306-87cd-3a3cb3385558"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7313,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "[status]_[datetime]-report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "reportFilename": "[status]_[datetime]-report",
+        "quiet": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
